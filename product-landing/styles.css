@@ -1,0 +1,326 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Verdana';
+}
+
+#header {
+    height: 60px;
+    /* border: 1px solid black; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 5;
+}
+
+#header #header-img {
+    height: 50px;
+    margin: 5px 30px;
+}
+#header #nav-bar {
+    margin: 5px 50px 5px 0px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#header #nav-bar .nav-link {
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: gray;
+    border-radius: 20px;
+    position: relative;
+    background-color: rgb(251, 251, 251);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25); 
+}
+#header #nav-bar .nav-link:hover {
+    background-color: rgb(233, 233, 233);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    transform: translateY(2px);
+}
+
+
+#banner {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+#banner #banner-img {
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px 80%;
+    /* transform: translateY(-40%); */
+}
+#banner #banner-info {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    width: 450px;
+    color: white;
+}
+
+#banner #banner-info h2 {
+    font-family: sans-serif;
+    text-align: center;
+    width: fit-content;
+    font-size: 3em;
+    font-weight: 600;
+    text-shadow: 0px 0px 30px black;
+}
+#banner #banner-info p {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    text-shadow: 0px 0px 30px black;
+}
+
+
+
+/*? SHOP */
+
+#shop {
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 50px 0px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+#shop .shop-item {
+    /* border: 1px solid black; */
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+#shop .shop-item img {
+    width: 300px;
+    max-height: 300px;
+    min-width: 250px;
+}
+#shop .shop-item h1 {
+    font-weight: 400;
+    font-size: 1em;
+    color: black;
+}
+#shop .shop-item p {
+    font-weight: 500;
+    font-size: 0.9em;
+    color: gray;
+}
+
+#feature {
+    height: 550px;
+    padding: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#feature #video {
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+}
+#feature #form {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1); 
+}
+#feature h2 {
+    font-size: 1.6em;
+    font-weight: 500;
+}
+#feature label {
+    font-size: 1em;
+    margin: 10px 0px;
+}
+#feature #email {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 10px;
+    border:1px solid gray;
+    border-radius: 10px;
+    font-size: 1em;
+}
+#feature #submit {
+    width: 100%;
+    height: 35px;
+    margin: 20px 0px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: rgb(248, 188, 97);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25); 
+}
+#feature #submit:hover {
+    background-color: rgb(241, 173, 69);
+    transform: translateY(2px);
+}
+
+#footer {
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+#footer p {
+    color: gray;
+    font-weight: 200;
+    font-size: 0.8em;
+    margin: 5px;
+}
+#footer a {
+    color: rgb(3, 3, 182);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+@media (max-width: 1265px) {
+    #banner {
+        height: 500px;
+    }
+    #feature {
+        min-height: 900px; 
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+    
+    #feature #video {
+        /* border: 1px solid black; */
+        min-width: 500px;
+        min-height: 450px;
+        margin: 0px 0px 100px 0px;
+    }
+
+    #feature #form {
+        margin: 80px 0px;
+    }
+}
+
+@media (max-width: 850px) {
+    #banner {
+        height: 400px;
+    }
+    
+
+    #feature #video {
+        /* border: 1px solid black; */
+        min-height: 400px;
+        max-height: 400px;
+        max-width: 700px;
+    }
+
+}
+
+@media (max-width: 740px) {
+    #banner {
+        height: 400px;
+    }
+    
+
+    #feature #video {
+        /* border: 1px solid black; */
+        min-height: 280px;
+        max-height: 280px;
+        max-width: 500px;
+    }
+
+}
+@media (max-width: 500px) {
+
+    #header #nav-bar .nav-link {
+        width: auto;
+        margin: 0px;
+    }
+
+    #banner {
+        height: 400px;
+    }
+    #banner #banner-info {
+        left: 0%;
+        margin-left: 10px;
+    }
+    #banner #banner-info h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+    #banner #banner-info p {
+        font-size: 1em;
+        text-align: left;
+        /* border: 1px solid black; */
+    }
+    
+    #feature {
+        height: 600px;
+    }
+
+    #feature #video {
+        /* border: 1px solid black; */
+        min-height: 260px;
+        max-height: 280px;
+        min-width: 400px;
+        max-width: 400px;
+        margin: 0px;
+    }
+
+}
+
+
+/* Scroll bar */
+/* width */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+    border-radius: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
