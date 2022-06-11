@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 'border-box';
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    color: gray;
+  }
+  
+  #container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  #title{
+    text-align: center;
+    padding: 10px;
+  }
+  #description {
+    padding: 5px;
+  }
+  #survey-form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  #survey-form label, #survey-form p {
+    margin: 5px 0px;
+  }
+  #name, #email, #number, #dropdown {
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #survey-form textarea {
+    margin: 0px;
+    margin-top: 5px;
+    height: 60px;
+  }
+  
+  #survey-form input[type='submit'] {
+    margin: 20px 0px;
+    height: 30px;
+    border: none;
+    background-color: #7CE55C;
+    color: white;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  #survey-form input[type='submit']:hover {
+    background-color: #5DCE3B;
+    cursor: pointer;
+  }
