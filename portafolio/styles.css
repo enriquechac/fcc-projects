@@ -1,0 +1,74 @@
+
+:root{
+    --main-color: #01d3b0;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: var(--main-color);
+    color: white;
+    z-index: 0;
+}
+
+#navbar h1 {
+    flex-grow: 1;
+    margin: 20px;
+}
+#navbar a {
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section img {
+    border-radius: 50%;
+    width: 300px;
+    position: relative;
+}
+
+#welcome-section h1 {
+    padding: 10px 30px;
+    font-size: 4em;
+}
+/* https://www.freecodecamp.org/news/build-and-deploy-your-own-personal-portfolio-site/ */
+
+#welcome-section h1 p  {
+    margin-top: 20px;
+    font-size: 0.5em;
+    text-align: right;
+}
+
+#welcome-section p::after {
+    position: absolute;
+    content: "";
+    width: 800px;
+    height: 50px;
+    background-color: var(--main-color);
+    transform: translateX(-600px);
+    z-index: -1;
+}
+
+#projects {
+    height: 100vh;
+}
