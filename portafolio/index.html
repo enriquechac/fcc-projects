@@ -11,30 +11,59 @@
 
 
     <nav id="navbar">
-        <h1>Portfolio</h1>
-        <a href="#">Welcome</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <h1>&lt;Portfolio /&gt;</h1>
+        <a href="#welcome-section">Welcome</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <section id="welcome-section">
-        <!-- Welcome section height of the viewport -->
         <img src="https://github.com/enriquechac.png" alt="" srcset="">
         <h1>Soy Enrique
-            <p>Developer</p>
+            <p>A web developer</p>
         </h1>
     </section>
 
     <section id="projects">
         <!-- at least one element with a class project-title, and one link to a project -->
+        <h1>These are some of my projects</h1>
 
-        <a href="#" class="project-title">
-            
-        </a>
+        <section id="projects-container">
+
+            <a class="project" href="#">
+                <img src="https://links.enriquechacon.com/public/fcc/img-tribute.png">
+                <h1 class="project-tile">Tribute page</h1>
+            </a>
+            <a class="project" href="#">
+                <img src="https://links.enriquechacon.com/public/fcc/img-survey.png">
+                <h1 class="project-tile">Survey form page</h1>
+            </a>
+            <a class="project" href="#">
+                <img src="https://links.enriquechacon.com/public/fcc/img-documentation.png">
+                <h1 class="project-tile">Documentation page</h1>
+            </a>
+            <a class="project" href="#">
+                <img src="https://links.enriquechacon.com/public/fcc/img-product.png">
+                <h1 class="project-tile">Product page</h1>
+            </a>
+            <a class="project" href="#">
+                <img src="https://links.enriquechacon.com/public/fcc/img-portfolio.png">
+                <h1 class="project-tile">Portfolio page</h1>
+            </a>
+
+        </section>
 
     </section>
 
+    <section id="contact" class="flex">
+        <h1>Let's work together...</h1>
+        <a id="profile-link" href="https://www.freecodecamp.org/fccf4e64c0d-f673-43d0-b8ea-ee2038c6065f" target="_blank">My freeCodeCamp profile</a>
+    </section>
 
+    <footer id="footer" class="flex">
+        <p>Coded by Enrique Chacón. <br>
+            This portfolio is just a freeCodeCamp challenge</p>
+    </footer>
 
 </body>
 </html>
